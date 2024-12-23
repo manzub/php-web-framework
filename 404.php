@@ -19,4 +19,4 @@ if(isset($_SESSION['error_vars'])){
         echo "<span class='pull-left' style='margin-right:5px;font-weight:900'>".$tag."</span>";
         echo "<span>".$error."</span>";
     echo "</div>";
-}Í
+}
