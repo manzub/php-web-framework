@@ -1,0 +1,36 @@
+index.php - default page, handles all requests
+myrouter - v1.0
+instructions
+
+-   index.php = {
+    Create a new route by calling the add function on the router class eg
+    $router->add(route, expectedParams) - $router->add('/home', 2);
+    the expectedParms is the number of parameters that will followed by the slash
+    e.g [home/1/2] those are the parameters.
+    then you run the server by calling the run function on the server class eg $router->run()
+},
+-   ajaxcather.php = {
+    send all ajaxrequests there and write code blocks to handle them there
+},
+-   /models = {
+    Holds all models for each file eg /home calls home.php model file = Home.php and class = Home()
+    
+},
+-   /controller = {
+    Holds all controller classes for each page file eg /home calls home.php controller file = Home.php
+    class = cHome.php;
+    and it allways has a handlePost function to handle all post request;
+},
+-   /public = {
+    stores all publicly accessable files eg js,css,html,pages and included components like headers.footers etc
+},
+- /storage = {
+    stores all data or files controlled by the database and error-logging eg database records like uploaded files and images
+},
+-   log.txt = {
+    log file for all server activities
+    both errors,get and post requests
+},
+-   /config = {
+    Holds all configuration files, eg the router class, the router switch function, the db connect file and the settings file
+}
